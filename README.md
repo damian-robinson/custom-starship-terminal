@@ -27,10 +27,13 @@ export STARSHIP_CONFIG=<path-to-your-file>/starship.toml
 9. Save the file without adding anything into it. (This disables the login information from displaying above your prompt when you first launch Terminal.
 10. Open your terminal app and you should see the following chevron right prompt:
 
-![Cusomized Starship Terminal Prompt](/ss0.png "Cusomized Starship Terminal Prompt")
+![Cusomized Starship Terminal Prompt](/ss0.png "Cusomized Starship Terminal Prompt 1")
 
 
 Note* Your cursor will be whatever it is in your terminal app settings.
+
+I'm using MesloLGS NF font and have git and a few other things that will display on the line:
+![Cusomized Starship Terminal Prompt](/ss1.png "Cusomized Starship Terminal Prompt 2")
 
 You can change the prompt symbol by opening the **"starship.toml"** file in a text editor app and  adding whatever prompt symbol you want in place of the chevron right symbol.
 
