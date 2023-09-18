@@ -1,0 +1,122 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+
+# Prompt Config
+format = """
+$hostname\
+$git_branch $git_commit $git_state $git_metrics\
+$sudo\
+$fill\
+${custom.markdown}\
+${custom.emacs}\
+$lua\
+$nodejs\
+$rust\
+$solidity\
+$swift\
+$conda $python\
+$line_break\
+$character"""
+
+
+# Prompt Character
+[character]
+success_symbol = '[􀄅](bold green) '
+error_symbol = '[􀄅](bold red) '
+disabled = false
+
+
+# Hostname
+[hostname]
+format = '[$ssh_symbol$hostname]($style)'
+ssh_only = true
+ssh_symbol = '􀤆 '
+style = 'blue'
+disabled = false
+
+
+# Git
+# Branch
+[git_branch]
+format = '[$branch(:$remote_branch)]($style) '
+style = 'purple'
+truncation_length = 4
+disabled = false
+
+#Metrics
+[git_metrics]
+format = '([+$added]($added_style) )([-$deleted]($deleted_style) )'
+added_style = 'green'
+deleted_style = 'red'
+only_nonzero_diffs = true
+disabled = false
+
+
+# Fill
+[fill]
+symbol = '•'
+style = 'dimmed blue'
+disabled = false
+
+
+# Lua
+[lua]
+format = '[$symbol($version )]($style)'
+symbol = ' ⚈ '
+style = 'blue'
+detect_extensions = ['lua']
+disabled = false
+
+
+# NodeJS
+[nodejs]
+format = ' [$symbol($version )]($style)'
+disabled = false
+
+
+# Swift
+[swift]
+disabled = false
+
+
+# Conda
+[conda]
+format = '[$symbol$environment]($style) '
+symbol = ' 🅒 '
+truncation_length = 1
+ignore_base = true
+disabled = false
+
+
+# Python
+[python]
+format = '${symbol}(\($virtualenv\) )]($style)'
+symbol = ' Py '
+style = 'yellow'
+disabled = false
+
+
+# Emacs
+[custom.emacs]
+detect_extensions = ['el']
+format = '[$symbol]($style)'
+symbol = ' 􀤑 '
+style = 'dimmed purple'
+
+
+# Markdown
+[custom.markdown]
+detect_extensions = ['md']
+format = '[$symbol]($style)'
+symbol = ' 􀉀 '
+style = 'black'
+
+
+# Line Break
+[line_break]
+disabled = false
