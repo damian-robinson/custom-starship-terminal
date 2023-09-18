@@ -5,7 +5,7 @@ After trying a few different ways to customize my Terminal, such as Oh My Zsh!, 
 *Note: I use a Mac and the prompt icon I'm using is available of Apple's [SF Symbols](https://developer.apple.com/sf-symbols/). If you're on another system, you may or may not need to choose a different prompt icon.
 
 # How to copy my config:
-1. Download the **starship.toml** file from my repo above.
+1. Download the **"starship.toml"** file from my repo above.
 2. Find the downloaded file on your system.
 3. Move the file into a folder of your choice within your User folder. My config file is in a **zsh** folder I created at this path:
 ```markdown
